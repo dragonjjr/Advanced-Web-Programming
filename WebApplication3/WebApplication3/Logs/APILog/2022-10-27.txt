@@ -1,0 +1,131 @@
+2022-10-27 13:18:30.974 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.JWTAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 13:22:23.115 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.JWTAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 13:55:01.332 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: A suitable constructor for type 'WebApplication3.Handler.JWTAuthHandler' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 15:53:25.682 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 15:54:17.900 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 15:55:05.544 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 15:56:14.256 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.SecretKeyAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 15:59:13.464 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.SecretKeyAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 16:02:50.994 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 16:03:39.514 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 16:04:29.825 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 16:05:05.264 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35
+2022-10-27 16:06:18.793 +07:00 [FTL] Error Occured in service
+System.InvalidOperationException: No public 'Invoke' or 'InvokeAsync' method found for middleware of type 'WebApplication3.Handler.BasicAuthenticationHandler'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35

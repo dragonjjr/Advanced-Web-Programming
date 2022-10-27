@@ -1,0 +1,95 @@
+﻿@page "/Login"
+@model WebClient.Pages.LoginModel
+@using Microsoft.AspNetCore.Http
+@using WebClient.Common
+@using DevExtreme.AspNet.Mvc
+@using DevExtreme.AspNet.Data
+@{
+}
+
+<head>
+    <title>Table Data Addition</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+</head>
+<div class="body">
+    <h1>Login</h1>
+    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+    <button onclick="submit()">Login</button>
+    
+</div>
+<div class="body">
+    <h1>Refresh Token</h1>
+    <button onclick="RefreshToken()">Refresh Token</button>
+</div>
+<div class="body">
+    <h1>Actor</h1>
+    <button onclick="getActor()">GetActor</button>
+</div>
+<script type="text/javascript">
+    function submit() {
+        var username = document.getElementById("login").value;
+        var password = document.getElementById("password").value;
+        var parameter = { "UserName": username, "Password": password };
+        $.ajax({
+            url: "Authen/Login",
+            dataType: "json",
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            async: false,
+            cache: false,
+            data: parameter
+        }).done(function (e) {
+               if(e.status == 200)
+               {
+                    alert("Accesstoken: " + e.accesstoken, " Refreshtoken: " + e.refreshtoken);
+                    //document.location.href = "/Home";
+               }
+               else{
+                    alert("Đăng nhập không thành công");
+               } 
+        });
+    }
+    function getActor() {
+        $.ajax({
+            url: "Actor/GetActor",
+            dataType: "json",
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            async: false,
+            cache: false,
+            data: null
+        }).done(function (e) {
+            if (e.status == 200) {
+                alert("Data: FirstName: " + e.data[2].firstName + " LastName: " + e.data[2].lastName);
+            }
+            else {
+                alert(e.messages);
+            }
+        });
+    }
+
+    function RefreshToken() {
+        $.ajax({
+            url: "Authen/RefreshToken",
+            dataType: "json",
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            async: false,
+            cache: false,
+            data: null
+        }).done(function (e) {
+            if (e.status == 200) {
+                alert("Accesstoken: " + e.accesstoken + " Refreshtoken: " + e.refreshtoken);
+            }
+            else {
+                alert(e.messages);
+            }
+        });
+    }
+</script>

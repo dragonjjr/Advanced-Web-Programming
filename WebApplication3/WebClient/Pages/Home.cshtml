@@ -1,0 +1,35 @@
+﻿@page "/Home"
+@model WebClient.Pages.LoginModel
+@using Microsoft.AspNetCore.Http
+@using WebClient.Common
+@using DevExtreme.AspNet.Mvc
+@using DevExtreme.AspNet.Data
+@{
+}
+
+
+<div class="body">
+    <h1>Đăng nhập</h1>
+    <button onclick="getActor()">GetActor</button>
+</div>
+<script type="text/javascript">
+    
+    function getActor() {
+        $.ajax({
+            url: "Actor/GetActor",
+            dataType: "json",
+            type: "POST",
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            async: false,
+            cache: false,
+            data: null
+        }).done(function (e) {
+            if (e.status == 200) {
+                alert("Accesstoken: " + e.accesstoken, " Refreshtoken: " + e.refreshtoken);
+            }
+            else {
+                alert("Đăng nhập không thành công");
+            }
+        });
+    }
+</script>

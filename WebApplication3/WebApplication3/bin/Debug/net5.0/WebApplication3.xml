@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication3</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication3.Controllers.ActorControllercs.GetAll">
+            <summary>
+            API lấy danh sách actor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication3.Controllers.ActorControllercs.Create(WebApplication3.Model.ActorModel)">
+             <summary>
+             tạo mới actor
+             </summary>
+             <param name="actor">mô tả actor</param>
+             <returns></returns>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item #1",
+                    "isComplete": true
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>

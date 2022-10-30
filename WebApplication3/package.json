@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@microsoft/signalr": "^6.0.10",
+    "chart.js": "^3.9.1",
+    "ng2-charts": "^4.0.1"
+  }
+}

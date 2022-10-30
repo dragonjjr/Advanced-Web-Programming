@@ -49,4 +49,10 @@ namespace WebClient.Common
         public string User { get; set; }
         public string token { get; set; }
     }
+
+    public class Market
+    {
+        public string? CompanyName { get; set; }
+        public int Volume { get; set; }
+    }
 }

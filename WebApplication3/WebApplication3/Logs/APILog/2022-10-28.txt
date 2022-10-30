@@ -1,0 +1,20 @@
+2022-10-28 15:23:53.911 +07:00 [FTL] Error Occured in service
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: WebApplication3.TimeFunctions.TimerManager Lifetime: Singleton ImplementationType: WebApplication3.TimeFunctions.TimerManager': Unable to resolve service for type 'System.Action' while attempting to activate 'WebApplication3.TimeFunctions.TimerManager'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: WebApplication3.TimeFunctions.TimerManager Lifetime: Singleton ImplementationType: WebApplication3.TimeFunctions.TimerManager': Unable to resolve service for type 'System.Action' while attempting to activate 'WebApplication3.TimeFunctions.TimerManager'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Action' while attempting to activate 'WebApplication3.TimeFunctions.TimerManager'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at WebApplication3.Program.Main(String[] args) in D:\Hoctap\HK3\CongNgheLapTrinhHienDai\Seminar\WebApplication3\WebApplication3\Program.cs:line 35

@@ -24,6 +24,8 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using WebApplication3.Handler;
+using WebApplication3.HubConfig;
+using WebApplication3.TimeFunctions;
 
 namespace WebApplication3
 {
@@ -46,13 +48,16 @@ namespace WebApplication3
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddCors(o => o.AddPolicy(name: MyAllowSpecificOrigins, builder =>
             {
-                builder.AllowAnyOrigin()
+                builder.WithOrigins("http://localhost:4200") //.AllowAnyOrigin()
                        .AllowAnyMethod()
-                       .AllowAnyHeader();
-                //.AllowCredentials();
+                       .AllowAnyHeader()
+                       .AllowCredentials();
             }));
+            services.AddSignalR();
+            services.AddSingleton<TimerManager>();
             services.AddControllers();
             //Basic
             //services.AddAuthentication("BasicAuthentication").AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
@@ -106,7 +111,7 @@ namespace WebApplication3
                     }
                 });
             });
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -130,8 +135,8 @@ namespace WebApplication3
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChartHub>("/chart");
             });
-            
         }
     }
 }

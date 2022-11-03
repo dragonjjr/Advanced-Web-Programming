@@ -21,6 +21,7 @@ namespace WebApplication3.Controllers
             _timer = timer;
         }
 
+        //API lấy dữ liệu và gửi đến client
         [HttpGet]
         public IActionResult Get()
         {
